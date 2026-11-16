@@ -1,0 +1,165 @@
+/* Reset & Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f6f8;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  background-color: #0b4f26; /* DMMMSU Dark Green */
+  color: #ffffff;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-bottom: 4px solid #f2b705; /* Gold Accent */
+}
+
+header img {
+  height: 55px;
+  width: auto;
+}
+
+header h1 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #083b1c;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 12px 0;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+nav a:hover {
+  background-color: #f2b705;
+  color: #083b1c;
+}
+
+/* Main Content & Aside Wrapper */
+.container {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  max-width: 1000px;
+  width: 90%;
+  margin: 40px auto;
+}
+
+/* Login Form Card */
+main {
+  flex: 1 1 350px;
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border-top: 5px solid #0b4f26;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form h3 {
+  text-align: center;
+  color: #0b4f26;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #444;
+  font-size: 0.9rem;
+}
+
+input {
+  padding: 10px 12px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #0b4f26;
+}
+
+button {
+  background-color: #0b4f26;
+  color: #ffffff;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 5px;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #13753a;
+}
+
+/* Aside Image Section */
+aside {
+  flex: 1 1 350px;
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+aside img {
+  width: 100%;
+  height: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 6px;
+  background-color: #e9ecef; /* Fallback background if image path isn't set */
+}
+
+/* Footer */
+footer {
+  background-color: #083b1c;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+  border-top: 3px solid #f2b705;
+}
